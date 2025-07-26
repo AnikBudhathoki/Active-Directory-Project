@@ -87,5 +87,22 @@ Purpose:  Allow computer on the network to automatically get their IP Adresses. 
     }
     ```
 
+   - $PASSWORD_FOR_USERS = "Password1": This variable sets a temporary password
+         - Important Security Note: In a real-world production environment, hardcoding passwords directly in scripts like this is generally not recommended due to security risks. For production, you would typically use more secure methods like prompting for a password              securely (Read-Host -AsSecureString), retrieving from a secure vault, or having users set their own password on first login (which this script does not automatically enforce). This script sets PasswordNeverExpires to $true but does not force a password                   change at next logon
+    - $USER_FIRST_LAST_LIST = Get-Content .\names.txt: This line reads the content of a text file named names.txt into a variable called $USER_FIRST_LAST_LIST. It expects each line in names.txt to contain a user's first and last name
+
+    - ConvertTo-SecureString: This cmdlet converts plain text into a SecureString object
+    - $PASSWORD_FOR_USERS: This is the plain-text password defined earlier ("Password1")
+    - -AsPlainText: Specifies that the input string is plain text and should be converted.
+
+    - Force: This parameter is often used with ConvertTo-SecureString when converting from plain text to bypass a warning that it's less secure to do so
+    - New-ADOrganizationalUnit: This cmdlet creates a new Organizational Unit (OU) in Active Directory.
+    - Name _USERS: Specifies the name of the new OU. It's named _USERS (the underscore often helps it sort to the top of the OU list in ADUC).
+    - ProtectedFromAccidentalDeletion $false: By default, when you create OUs in ADUC, they are protected from accidental deletion. This parameter explicitly sets that protection to $false, meaning the OU can be easily deleted later without first unchecking a box in          its properties
+  
+    - <ins>IN SUMMARY</ins>:
+    - This PowerShell script automates Active Directory user creation: it first defines a temporary password and reads a list of "First Last" names from names.txt. For each name, it generates a username (first initial + last name), creates an "_USERS" Organizational          Unit (OU) if it doesn't exist, and then uses New-ADUser to create an enabled user account with the specified name, a non-expiring password, and places it within the dynamically located _USERS OU in the domain, providing console feedback during the process.
+4) I Created another file with names (First, last) called names.txt. Each name is spearted by a new line
+5) 
 
    
