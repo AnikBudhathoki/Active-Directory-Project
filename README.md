@@ -1,5 +1,7 @@
 # Active-Directory-Project
-Active Directory lab environment to manage user accounts, organizational units, and group policies. Configured domain controllers, DNS, and Group Policy Objects (GPOs) for centralized authentication and access control
+Active Directory lab environment to manage user accounts, organizational units, and group policies. Configured domain controllers, DNS, and Group Policy Objects (GPOs) for centralized authentication and access control. I wanted to create and manage this project to gain knowledge on setting up, configuring, and managing a simulated Active Directory enviornment. I wanted to gain knowledge on the fundamentals of infracture knowledge for identity and access management/system adminstration
+  - I have two other files that I wrote while configuring and finshin this project. One of the files is for key terms/takeways I found while completing the project and the other file is short steps that I wrote down so I can easily recall what I did in the future if
+I do decide to redo this project/expand upon it
 
 **Lab Architecture**
 Virtualization Platform
