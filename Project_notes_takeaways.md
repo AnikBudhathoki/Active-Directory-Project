@@ -16,9 +16,9 @@
     OUs allow for even more granular administrative delegation and Group Policy application within a domain. You can delegate management of "North America Sales" users to a specific team without giving them control over all      of Sales, let alone the entire corporation.
 
 
-#Organizational Unit (OUs)
+# Organizational Unit (OUs)
 
-#Users -> MembersOf Attribute
+# Users -> MembersOf Attribute
 Common Built-in Groups:
   - Domain Users (All new users are typically added to this by default)
   - Domain Admins (If Alice needs administrative privileges over the domain)
@@ -29,3 +29,7 @@ Common Built-in Groups:
   - Server Operators (To manage servers)
   - Backup Operators (To perform backups)
   - Remote Desktop Users (To allow RDP access to servers)
+
+# RAS/NAT
+
+
