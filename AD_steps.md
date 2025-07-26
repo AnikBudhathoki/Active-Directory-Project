@@ -55,4 +55,37 @@ Purpose:  Allow computer on the network to automatically get their IP Adresses. 
    
 ![DHCP Config](https://media.discordapp.net/attachments/645079991310090243/1398756739264024586/DHCP_IP_Ranges.png?ex=6886853a&is=688533ba&hm=d04b77325bbb94954bc00363fdbdd1ed189bec8989a0a40fdea1f027bb13bfaf&=&format=webp&quality=lossless&width=752&height=639)
 
+
+#Powershell Script to Automate Creating users
+
+1) Run Powershell ISE as Adminstrator
+2) I wrote/saved this code in notepad and saved it as a .ps1 file (Powershell script)
+   ```
+   ?# ----- Edit these Variables for your own Use Case ----- #
+    $PASSWORD_FOR_USERS   = "Password1"
+    $USER_FIRST_LAST_LIST = Get-Content .\names.txt
+    # ------------------------------------------------------ #
+
+    $password = ConvertTo-SecureString $PASSWORD_FOR_USERS -AsPlainText -Force
+    New-ADOrganizationalUnit -Name _USERS -ProtectedFromAccidentalDeletion $false
+
+    foreach ($n in $USER_FIRST_LAST_LIST) {
+    $first = $n.Split(" ")[0].ToLower()
+    $last = $n.Split(" ")[1].ToLower()
+    $username = "$($first.Substring(0,1))$($last)".ToLower()
+    Write-Host "Creating user: $($username)" -BackgroundColor Black -ForegroundColor Cyan
+    
+    New-AdUser -AccountPassword $password `
+               -GivenName $first `
+               -Surname $last `
+               -DisplayName $username `
+               -Name $username `
+               -EmployeeID $username `
+               -PasswordNeverExpires $true `
+               -Path "ou=_USERS,$(([ADSI]`"").distinguishedName)" `
+               -Enabled $true
+    }
+    ```
+
+
    
