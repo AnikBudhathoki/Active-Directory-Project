@@ -15,7 +15,7 @@ The environment consists of:
 Domain Controller (DC)
 OS: Windows Server 2019
 
-Roles Installed:
+**Roles Installed:**
 
   - Active Directory Domain Services (AD DS)
 
@@ -25,7 +25,7 @@ Roles Installed:
 
   - Domain Name: anikdomain.com
 
-* Network Interfaces:
+**Network Interfaces:**
 
   - NIC 1 (Internet):
 
