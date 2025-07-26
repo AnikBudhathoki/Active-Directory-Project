@@ -29,7 +29,30 @@ As per diagram we have two NICs. One is for internet and one is for internal net
     ![AD Configs](https://media.discordapp.net/attachments/645079991310090243/1398736202365927684/AD_Config.png?ex=68867219&is=68852099&hm=d70b6cd68570596d64df3987497ad8bf207aec8abae0dcf1c14076dfca0b0b36&=&format=webp&quality=lossless&width=752&height=541)
 
 5) Create own Domain Adminstrator Account -> Replace the default one provided at installation
+   MY username: a-abudhathoki
+   MY password: Password1
 
    ![Anik Budhathoki (me) Admin Account](https://media.discordapp.net/attachments/645079991310090243/1398748136121434184/new_admin_account.png?ex=68867d37&is=68852bb7&hm=6019565bcf2d2588817c5d2bfb6e30011db5f7b5ba3918b8ba71238e9eab0106&=&format=webp&quality=lossless)
+
+
+# Install RAS/NAT
+
+Purpose: When creating the windows 10 client, it will allow this client to be on own private virtual network, but it is still able to access internet through the Domain Controller. RAS/NAT on the DC will allow the windows 10 client to do this
+
+1) Add roles/features
+2) Install Remote Access with Routing
+3) Remote Access and Routing Installation Configurations:
+
+![Remote Access Config](https://media.discordapp.net/attachments/645079991310090243/1398751492021813268/Remote_Access_Routing_Config.png?ex=68868057&is=68852ed7&hm=ec4c7cd9adf9539a5c4a9998f59b2a0e040c13905711a9af0e699bb4d19db6f6&=&format=webp&quality=lossless)
+
+# Install DCHP Server
+
+Purpose:  Allow computer on the network to automatically get their IP Adresses. These include clients, users, adminstrators, etc.
+
+1) Add Role/Features
+2) DHCP Server
+3) Create IP range from 172.16.0.100 - 172.16.0.200
    
+![DHCP Config](https://media.discordapp.net/attachments/645079991310090243/1398756739264024586/DHCP_IP_Ranges.png?ex=6886853a&is=688533ba&hm=d04b77325bbb94954bc00363fdbdd1ed189bec8989a0a40fdea1f027bb13bfaf&=&format=webp&quality=lossless&width=752&height=639)
+
    
