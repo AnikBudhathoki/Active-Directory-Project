@@ -14,3 +14,18 @@
 
   - <ins>Organizational Units (OUs)</ins>: Within each domain, you'd then use Organizational Units (OUs). These are like the departments within each division (e.g., within the Sales division, you might have "North America Sales,"       "Europe Sales," "Sales Management").
     OUs allow for even more granular administrative delegation and Group Policy application within a domain. You can delegate management of "North America Sales" users to a specific team without giving them control over all      of Sales, let alone the entire corporation.
+
+
+#Organizational Unit (OUs)
+
+#Users -> MembersOf Attribute
+Common Built-in Groups:
+  - Domain Users (All new users are typically added to this by default)
+  - Domain Admins (If Alice needs administrative privileges over the domain)
+  - Enterprise Admins (If Alice needs administrative privileges over the entire forest)
+  - Schema Admins (If Alice needs to modify the AD schema)
+  - Account Operators (To create/manage user and group accounts)
+  - Print Operators (To manage printers)
+  - Server Operators (To manage servers)
+  - Backup Operators (To perform backups)
+  - Remote Desktop Users (To allow RDP access to servers)
