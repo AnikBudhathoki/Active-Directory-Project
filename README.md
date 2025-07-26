@@ -1,7 +1,7 @@
 # Active-Directory-Project
 Active Directory lab environment to manage user accounts, organizational units, and group policies. Configured domain controllers, DNS, and Group Policy Objects (GPOs) for centralized authentication and access control
 
-#Lab Architecture
+**Lab Architecture**
 Virtualization Platform
 -  VirtualBox is used to host all virtual machines.
 
@@ -40,6 +40,55 @@ OS: Windows Server 2019
     - Subnet Mask: 255.255.255.0
 
     - DNS: 127.0.0.1 (self)
+
+# DHCP Configuration 
+  - Scope Range: 172.16.0.100 - 172.16.0.200
+  
+  - Subnet Mask: 255.255.255.0
+    
+  - Gateway: 172.168.0.1
+    
+  - DNS Server: 172.16.0.1
+
+# Client (Windows 10)
+
+  - NIC (Internal): Obtains IP via DHCP from DC
+
+**Joins the domain anikdomain.com**
+
+# Active Directory Configuration
+  - Domain: mydomain.com
+
+# Organizational Units (OUs):
+
+  - Created for structured management (e.g., Users, Groups)
+
+# PowerShell Automation:
+
+  - Script created to add 1,000+ user accounts in bulk to the AD domain.
+
+# RAS / NAT Configuration
+  - Configured on the DC to allow internal clients to access the internet through the DC.
+
+  - External Network: Internet (via home router)
+
+  - Internal Network: VirtualBox internal network
+
+# Features Implemented 
+  - Configured Active Directory Domain Services
+  - Set up DHCP server for IP address allocation
+  - Implemented NAT and Routing for internet access
+  - Automated user account creation using PowerShell
+  - Joined Windows 10 client to the domain
+
+# Tools and Technologies
+Windows Server 2019
+
+Windows 10
+
+PowerShell (for automation)
+
+VirtualBox (virtualization platform)
 
 
 
