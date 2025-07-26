@@ -25,5 +25,6 @@ As per diagram we have two NICs. One is for internet and one is for internal net
 2) Install Active Directory Domain Services
 3) Add a new forest (Like root, head): mydomain.com
 4) Apply configurations:
+
     ![AD Configs](https://media.discordapp.net/attachments/645079991310090243/1398736202365927684/AD_Config.png?ex=68867219&is=68852099&hm=d70b6cd68570596d64df3987497ad8bf207aec8abae0dcf1c14076dfca0b0b36&=&format=webp&quality=lossless&width=752&height=541)
    
