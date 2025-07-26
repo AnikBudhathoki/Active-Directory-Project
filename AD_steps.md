@@ -102,7 +102,15 @@ Purpose:  Allow computer on the network to automatically get their IP Adresses. 
   
     - <ins>IN SUMMARY</ins>:
     - This PowerShell script automates Active Directory user creation: it first defines a temporary password and reads a list of "First Last" names from names.txt. For each name, it generates a username (first initial + last name), creates an "_USERS" Organizational          Unit (OU) if it doesn't exist, and then uses New-ADUser to create an enabled user account with the specified name, a non-expiring password, and places it within the dynamically located _USERS OU in the domain, providing console feedback during the process.
-4) I Created another file with names (First, last) called names.txt. Each name is spearted by a new line
-5) 
+
+3) Enable execution of all Scripts using:
+```
+Set-ExecutionPolicy Unrestricted
+```
+4) Run the Script
+
+![Powershell Script Running](https://media.discordapp.net/attachments/645079991310090243/1398764186204373022/Powershell_Script_running.png?ex=68868c29&is=68853aa9&hm=6020e371977acd36fd1f2656659ba316309c816d446b1e6ea01c9d94d4270c1e&=&format=webp&quality=lossless)
+
+
 
    
