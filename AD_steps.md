@@ -18,6 +18,12 @@ As per diagram we have two NICs. One is for internet and one is for internal net
      - Other one is internal network
 3) Change the internal Network IP Ranges for DHCP scope
    ![Internal IP Config](https://media.discordapp.net/attachments/645079991310090243/1398730886178148392/Internal_Network_Setup.png?ex=68866d26&is=68851ba6&hm=5639e5d5f59a943918edf1cb5f1cb9b3fce7cd4572f04e8c15b3d62924a812e7&=&format=webp&quality=lossless)
-   
-  
+
+# Create A Domain
+
+1) Add roles and features
+2) Install Active Directory Domain Services
+3) Add a new forest (Like root, head): mydomain.com
+4) Apply configurations:
+    ![AD Configs](https://media.discordapp.net/attachments/645079991310090243/1398736202365927684/AD_Config.png?ex=68867219&is=68852099&hm=d70b6cd68570596d64df3987497ad8bf207aec8abae0dcf1c14076dfca0b0b36&=&format=webp&quality=lossless&width=752&height=541)
    
