@@ -114,6 +114,26 @@ Set-ExecutionPolicy Unrestricted
 ![User Accounts](https://media.discordapp.net/attachments/645079991310090243/1398766813692825683/Users_Accounts.png?ex=68868e9c&is=68853d1c&hm=899f1c423e11dd30ae24576e0da04d4b7f80e37beaae937ac5391389a7daad89&=&format=webp&quality=lossless)
 
 
+# Set up Client VM in Virtual Box
+
+1) Download and install an ISO for Windows 10
+
+2) Make any necessary configurations tailored to power of your host machine
+
+3) Make sure that network type is internal and the same one used by the DC controller server VM
+
+![Network Configuration](https://media.discordapp.net/attachments/645079991310090243/1399560103874789396/client_server_network.png?ex=6889716b&is=68881feb&hm=1c4dcae7c70420723fd72bfee57619e7f9e9e301a346f19921e433dd0dc8fb76&=&format=webp&quality=lossless)
+
+4) Check the IP Configurations are working on the Client Windows Server to Check DHCP is working correctly + Check "NATing" works by pining google.com
+
+![IP Config Check](https://media.discordapp.net/attachments/645079991310090243/1399562776791486685/IP_Check_client.png?ex=688973e8&is=68882268&hm=b4d639248a4e6054b6c580acfe4783f3edc6878d7ef8be8c5715f0a4a996d540&=&format=webp&quality=lossless)
+
+
+
+
+
+
+
 
 
    
