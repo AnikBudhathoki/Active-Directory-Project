@@ -73,7 +73,7 @@ RRAS is a role/service in Windows Server that allows a server to act as a VPN se
 - Often used to implement site-to-site VPNs between different AD locations or branches.
 
 
-#DHCP Server
+# DHCP Server
 
 A DHCP Server automatically assigns IP addresses and network configuration (like subnet mask, default gateway, DNS) to client devices on the network.
 
