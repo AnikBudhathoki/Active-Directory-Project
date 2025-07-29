@@ -128,6 +128,13 @@ Set-ExecutionPolicy Unrestricted
 
 ![IP Config Check](https://media.discordapp.net/attachments/645079991310090243/1399562776791486685/IP_Check_client.png?ex=688973e8&is=68882268&hm=b4d639248a4e6054b6c580acfe4783f3edc6878d7ef8be8c5715f0a4a996d540&=&format=webp&quality=lossless)
 
+5) I renamed the Client PC to ANIK_CLIENT and joined mydomain.com
+
+![Rename_PC](https://media.discordapp.net/attachments/645079991310090243/1399563882275536988/Rename_Client_PC.png?ex=688974f0&is=68882370&hm=2f6e1e02a316c5d2a91d7820f4a6029a7a30ba0e53cff69c349b0bf3665324d9&=&format=webp&quality=lossless)
+
+6) View DC to check DHCP has Client computer in the address leases
+
+![DHCP Check](![Uploading image.png…]()
 
 
 
