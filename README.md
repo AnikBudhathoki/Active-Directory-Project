@@ -13,6 +13,8 @@ The environment consists of:
 
   - Windows 10 Client
 
+![Diagram](https://media.discordapp.net/attachments/645079991310090243/1399570555849670767/AD_Flow.png?ex=68897b27&is=688829a7&hm=c1a5fe94ae0056d443caaffaeb0ec62c94f7981c478596caef798d6c7af98208&=&format=webp&quality=lossless)
+
 # Network Configuration
 Domain Controller (DC)
 OS: Windows Server 2019
