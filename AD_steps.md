@@ -134,7 +134,9 @@ Set-ExecutionPolicy Unrestricted
 
 6) View DC to check DHCP has Client computer in the address leases
 
-![DHCP Check](![Uploading image.png…]()
+![DHCP Check](https://media.discordapp.net/attachments/645079991310090243/1399564443238797464/Address_Lease_DC.png?ex=68897575&is=688823f5&hm=6dbffd84e1968dfc9f9059faf755f462314ebf83db75a5490eb9b3c8abaf4070&=&format=webp&quality=lossless&width=752&height=496)
+
+
 
 
 
